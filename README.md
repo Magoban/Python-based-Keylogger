@@ -15,24 +15,24 @@ This project aimed to develop a fully functional keylogger using Python that can
 
 ### Skills Learned
 
-* **Python programming** (Scripting, automation, and file handling)
-* **Keyboard event monitoring** using the pynput module
-* **Screenshot capturing** with Pillow (PIL)
-* **Clipboard access** using pyperclip
-* **Active window logging** with pygetwindow
-* **Stealth operation techniques** (running in the background)
-* **Data exfiltration** via email and **server-based** delivery
-* **Building standalone executables** with pyinstaller
+* **Python programming** (Scripting, automation, and file handling).
+* **Keyboard event monitoring** using the pynput module.
+* **Screenshot capturing** with Pillow (PIL).
+* **Clipboard access** using pyperclip.
+* **Active window logging** with pygetwindow.
+* **Stealth operation techniques** (running in the background).
+* **Data exfiltration** via email and **server-based** delivery.
+* **Building standalone executables** with pyinstaller.
 
 ### Tools & Libraries Used
 
-* **Python 3** (Primary programming language)
-* **pynput** (Keyboard event tracking)
-* **Pillow (PIL)** (For taking screenshots)
-* **pyperclip** (Clipboard access)
-* **pygetwindow** (Tracking the active window)
-* **smtplib** (Email sending)
-* **pyinstaller** (Converting the script into an executable)
+* **Python 3** (Primary programming language).
+* **pynput** (Keyboard event tracking).
+* **Pillow (PIL)** (For taking screenshots).
+* **pyperclip** (Clipboard access).
+* **pygetwindow** (Tracking the active window).
+* **smtplib** (Email sending).
+* **pyinstaller** (Converting the script into an executable).
 
 ## Steps
 
@@ -166,6 +166,7 @@ copy /b legitimate.exe + keylogger.exe output.exe
 ```
 
 **Conclusion**
+
 This project provided valuable experience in ethical hacking, malware development, and stealth operations. The keylogger was designed to be highly functional, capturing keystrokes, screenshots, clipboard data, and active windows while remaining hidden.
 
 **Future Enhancements**
